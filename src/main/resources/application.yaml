@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: qr_code_ai_toolbox
