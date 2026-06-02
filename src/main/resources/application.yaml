@@ -1,3 +1,43 @@
+integrations:
+  goqr:
+    api:
+      url: https://api.qrserver.com/v1
+      size: 300x300
+      charset-source: UTF-8
+      ecc: M
+      format: png
+      margin: 25
+  apod:
+    api:
+      url: https://api.nasa.gov/planetary/apod
+      api-key: ${NASA_API_KEY}
+
+logging:
+  level:
+    org.springframework.ai: info
+    org.springframework.ai.chat.client.advisor: debug
+    web: debug
+
+server:
+  port: 9020
+
 spring:
   application:
     name: qr_code_ai_toolbox
+    title: QRCode AI Toolbox
+    version: 0.0.1-SNAPSHOT
+  reactor:
+    netty:
+      native: false
+  banner:
+    location: banner.txt
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-5.4-nano
+          temperature: 1.0
+        embedding:
+          options:
+            model: text-embeddding-3-small
