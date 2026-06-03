@@ -36,7 +36,7 @@ public class APODTools {
     public ApodResponse getApodByDate(
             @ToolParam(description = "Date in YYYY-MM-DD format, e.g. 2023-07-04") String date) {
         log.info("APODController::getApodByDate(date = {})", date);
-        return client.getPlanetaryAPODByDate(date, false, date);
+        return client.getPlanetaryAPODByDate(date, false, apiKey);
     }
 
     @Tool(description = """
@@ -47,6 +47,6 @@ public class APODTools {
     public ApodResponse getApodOneYearAgo() {
         log.info("APODController::getApodOneYearAgo()");
         String oneYearAgo = LocalDate.now().minusYears(1).format(FORMATTER);
-        return client.getPlanetaryAPODByDate(oneYearAgo, false, oneYearAgo);
+        return client.getPlanetaryAPODByDate(oneYearAgo, false, apiKey);
     }
 }
