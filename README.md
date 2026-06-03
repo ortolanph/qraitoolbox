@@ -1,14 +1,13 @@
 Once running, hit /qr/generate with natural language:
 
-| Prompt                                         | Tool called               |   Works?    |
-|------------------------------------------------|---------------------------|:-----------:|
-| Generate a QR code for Hello World             | `generateTextQrCode`      |     yes     |
-| QR code for https://google.com                 | `generateLinkQrCode`      |     yes     |
-| QR for Wi-Fi SSID=MyNet password=1234 type=WPA | `generateWifiQrCode`      |      ?      |
-| WhatsApp QR for +5511999990000                 | `generateWhatsAppQrCode`  |     yes     |
-| QR for PDF at https://example.com/doc.pdf      | `generatePdfQrCode`       | don't know  |
-| Phone call QR for +351912345678                | `generatePhoneCallQrCode` |     yes     |
-| SMS QR to +351912345678 saying Hello           | `generateSmsQrCode`       |     yes     |
+| Prompt                                         | Tool called               | Works? |
+|------------------------------------------------|---------------------------|:------:|
+| Generate a QR code for Hello World             | `generateTextQrCode`      |  yes   |
+| QR code for https://google.com                 | `generateLinkQrCode`      |  yes   |
+| QR for Wi-Fi SSID=MyNet password=1234 type=WPA | `generateWifiQrCode`      |  yes   |
+| WhatsApp QR for +5511999990000                 | `generateWhatsAppQrCode`  |  yes   |
+| Phone call QR for +351912345678                | `generatePhoneCallQrCode` |  yes   |
+| SMS QR to +351912345678 saying Hello           | `generateSmsQrCode`       |  yes   |
 
 Once running, hit /apod with natural language:
 
