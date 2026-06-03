@@ -7,9 +7,9 @@ integrations:
       ecc: M
       format: png
       margin: 25
-  apod:
+  nasa:
     api:
-      url: https://api.nasa.gov/planetary/apod
+      url: https://api.nasa.gov
       api-key: ${NASA_API_KEY}
 
 logging:

@@ -15,7 +15,7 @@ public class QRService {
     private final ChatClient qrChatClient;
 
     public byte[] generateQRCode(String prompt) {
-        log.info("QRTools::generateQRCode(prompt = {})", prompt);
+        log.info("QRService::generateQRCode(prompt = {})", prompt);
         String base64 = qrChatClient
                 .prompt()
                 .user(prompt)
