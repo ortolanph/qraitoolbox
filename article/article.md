@@ -211,4 +211,5 @@ The available prompts for that services are:
 
 The tool annotation is a powerful resource for AI on which, with natural language (in this case I used only English),
 links with internal services to retrieve all kinds of data. It can be used in a shop where the customers can select,
-using a prompt, products of a certain family or with certain characteristics. It will depend on the business needs. 
+using a pre-defined prompt, products of a certain family or with certain characteristics. It will depend on the business
+needs. 
