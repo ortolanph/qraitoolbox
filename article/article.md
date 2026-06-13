@@ -1,5 +1,7 @@
 # Tools, Tools, Tools
 
+*This article is a draft*
+
 Imagine that you have a toolbox. You need to assemble a furniture, and no tool has been provided together. What do you
 do? Certainly you get your toolbox. In your toolbox you have:
 
@@ -71,7 +73,7 @@ This tool gets an input text, calls the QR Code integration and returns the QR C
 alone does not make magic, it's needed to link with the ChatClient:
 
 ```java
-    private final ChatClient.Builder chatClientBuilder;
+private final ChatClient.Builder chatClientBuilder;
 
 private final QRTools qrToolbox;
 
@@ -134,7 +136,7 @@ An example of call is:
 GET http://localhost:9020/qr?prompt=%22If%20you%20scanned%20this%20code,%20you%20are%20smart!%22 
 ```
 
-It will generate the following image:
+[It will generate the following image:]()
 
 ![test_qr_code.png](test_qr_code.png)
 
@@ -206,6 +208,11 @@ The available prompts for that services are:
 | What is NASA's picture today?                | `getTodayApod`      |
 | Show me the APOD from July 4th 2020          | `getApodByDate`     |
 | What was the astronomy picture one year ago? | `getApodOneYearAgo` |
+
+
+## Code
+
+The [code of the project](https://github.com/ortolanph/qraitoolbox) is on my Github. Please, give me a star for this project.
 
 ## Conclusions
 
